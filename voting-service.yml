@@ -6,13 +6,14 @@ metadata:
     app: voting-app
     name: voting-service
 spec:
+  type: LoadBalancer
   ports:
     - port: 80
       targetPort: 80
   selector:
     app: voting-app
       name: voting-app-pod
-  type: ClusterIP
+
 
 
 
